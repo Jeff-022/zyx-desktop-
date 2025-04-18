@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zyx Futuristic Computer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #001f1f);
+      color: #00f0ff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.6;
+      padding: 40px 10px;
+    }
+
+    main {
+      max-width: 1100px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.75);
+      border: 2px solid #00f0ff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 30px #00f0ff;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .content-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .text-section {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.75em;
+    }
+
+    h2 {
+      margin-top: 1.5em;
+      color: #00ff99;
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      margin-top: 0.5em;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    .highlight {
+      color: #00ff99;
+      font-weight: bold;
+    }
+
+    .futuristic-image {
+      width: 320px;
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #00f0ff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00f0ff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .futuristic-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00f0ff;
+    }
+
+    .glow-button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: transparent;
+      border: 2px solid #00ffcc;
+      border-radius: 10px;
+      color: #00ffcc;
+      cursor: pointer;
+      box-shadow: 0 0 15px #00ffcc;
+      transition: all 0.3s ease;
+    }
+
+    .glow-button:hover {
+      background-color: #00ffcc;
+      color: #000;
+      box-shadow: 0 0 30px #00ffcc;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="content-wrapper">
+      <div class="text-section">
+        <h1>Zyx Futuristic Computer</h1>
+        <p>
+          A <span class="highlight">futuristic working computer</span>, created by <span class="highlight">Jeffrey Aliyuda</span> on <span class="highlight">April 18, 2025</span>, inspired by an AI-generated image.
+        </p>
+        <p>
+          At just <span class="highlight">12 years old</span>, he designed and built a powerful sci-fi desktop packed with next-gen technology and a glowing visual experience.
+        </p>
+
+        <h2>⚡ Tech Specs & Features</h2>
+        <ul>
+          <li><span class="highlight">AI-powered interface</span> with voice and gesture control</li>
+          <li><span class="highlight">Integrated electricity generator</span> for off-grid operation</li>
+          <li><span class="highlight">Holographic display system</span> with 3D interface</li>
+          <li>Cyber defense firewall for maximum security</li>
+          <li>Neon-glow thermal cooling system</li>
+          <li>Powered by a custom <span class="highlight">quantum chip</span></li>
+        </ul>
+
+        <h2>🚀 Sci-Fi Capabilities</h2>
+        <p>
+          Zyx is more than just a computer—it's a futuristic command center. Whether you're gaming, coding, designing, or building the next invention, Zyx responds instantly with smooth performance and glowing animations.
+        </p>
+
+        <p>
+          Its system runs on the <span class="highlight">NeonFlux OS</span>, a special operating system designed by Jeffrey, optimized for futuristic multitasking and smart automation.
+        </p>
+
+        <h2>🌍 Mission</h2>
+        <p>
+          "To build the future with imagination, innovation, and electricity that never runs out."
+        </p>
+
+        <button class="glow-button" onclick="playSound()">Activate Power-Up</button>
+      </div>
+
+      <img
+        src="https://sdmntpritalynorth.oaiusercontent.com/files/00000000-4ecc-6246-ac7f-5e685a8fc88c/raw?se=2025-04-18T11%3A09%3A33Z&sp=r&sv=2024-08-04&sr=b&scid=b7a0a8c3-0c48-5061-b435-7ac945aaec32&skoid=ae70be19-8043-4428-a990-27c58b478304&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-17T22%3A32%3A26Z&ske=2025-04-18T22%3A32%3A26Z&sks=b&skv=2024-08-04&sig=bQN%2BKT283TdvZ8t7q6SPD69lkOuSoCVurUvnTl834Sc%3D"
+        alt="Futuristic Computer"
+        class="futuristic-image"
+      />
+    </div>
+  </main>
+
+  <!-- Sound effect -->
+  <audio id="powerSound">
+    <source src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-mechanical-bling-210.wav" type="audio/wav" />
+  </audio>
+
+  <script>
+    function playSound() {
+      const sound = document.getElementById('powerSound');
+      sound.play();
+    }
+  </script>
+</body>
+</html>
